@@ -1,0 +1,35 @@
+## =============================================================================
+## STEVE CODY MODS for BigTempPanel
+## github.com/codycrew/piconsole-mod-bigtemppanel
+## =============================================================================
+## Create entry for large font
+<ExtraLargeText@Label>
+    font_name: 'fonts/Inter-Bold.ttf'
+    font_size: '100sp'
+    text_size: self.size
+    markup: 1
+    valign: 'center'
+    halign: 'center'
+    size_hint: (None,None)
+    color: [0.36,1.00,0.50,1]
+## END STEVE CODY MOD
+
+
+## =============================================================================
+## BIGTEMP FORECAST PANEL AND BUTTON
+## =============================================================================
+
+<BigTempPanel>:
+    ExtraLargeText
+        text: '[color=ff0404ff]' +  app.Obs['outTemp'][0]
+        pos_hint: {'x': 18/262, 'y': 50/202}
+        size_hint: (250/262, 100/202)
+
+
+<BigTempButton>:
+    Button:
+        id: 'BigTempButton'
+        text: 'BigTemp'
+        on_release: app.CurrentConditions.SwitchPanel(self)
+
+
