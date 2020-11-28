@@ -2,7 +2,9 @@
 Code to incorporate a panel in the WeatherFlow PiConsole with a large font, high-visibility temperature reading.
 
 Written by Steve Cody
+
 Special thanks for python assistance from Pete Davis, and John Ullrey.
+
 Contact:  github@codycrew.net
 
 This code is specifically made to work with the WeatherFlow PiConsole written by Peter Davis.
