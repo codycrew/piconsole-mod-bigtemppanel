@@ -59,8 +59,11 @@ from lib.bigtempinclude      import BigTempButton
 
 Modify /home/pi/wfpiconsole/wfpiconsole.ini
 Beginning around line 50, modify the PrimaryPanel or SecondaryPanel section to enable the BigTemp panel in whichever position you like.
+
 For example:
+```
 PanelOne = BigTemp
+```
 
 After modifying the files, you can start the PiConsole with wfpiconsole start.  You should see the new panel.
 
