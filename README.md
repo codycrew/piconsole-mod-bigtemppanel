@@ -19,8 +19,7 @@ I have a WeatherFlow Tempest weather station and love the PiConsole Pete Davis h
 and like to be able to see the weather readings.  The issue I had is that I couldn't see the outside temperature on the PiConsole
 from across the room. 
 
-This mod simple adds another Panel choice called BigTemp.  It gives you an easily readible, bright font, outside temperature reading.  
-=========================
+This mod simply adds another Panel choice called BigTemp.  It gives you an easily readible, bright font, outside temperature reading.  
 
 To install:
 
