@@ -3,7 +3,7 @@ Code to incorporate a panel in the WeatherFlow PiConsole with a large font, high
 
 Written by Steve Cody
 
-Special thanks for python assistance from Pete Davis, and John Ullrey.
+Special thanks for python assistance from Peter Davis, and John Ullrey.
 
 Contact:  github@codycrew.net
 
