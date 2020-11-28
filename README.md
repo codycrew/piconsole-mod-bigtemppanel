@@ -10,31 +10,41 @@ Contact:  github@codycrew.net
 This code is specifically made to work with the WeatherFlow PiConsole written by Peter Davis.
 You can find his code at https://github.com/peted-davis/WeatherFlow_PiConsole
 
-Dependencies
+# Dependencies
 WeatherFlow PiConsole v4.x or greater
 
-Caveats
+# Caveats
 Please use this code at your own risk.  I'm not a developer.  I like to tinker and make things work.
+Also, after every PiConsole update, you will need to follow these instructions again to keep the BigTemp mod.
 
-Background
+# Background
 I have a WeatherFlow Tempest weather station and love the PiConsole Pete Davis has written.  I have it sitting in my living room
 and like to be able to see the weather readings.  The issue I had is that I couldn't see the outside temperature on the PiConsole
 from across the room. 
 
 This mod simply adds another Panel choice called BigTemp.  It gives you an easily readible, bright font, outside temperature reading.  
 
-To install:
+# Installation Instructions
 
-Stop the PiConsole with wfpiconsole stop.
+Stop the PiConsole
+```
+wfpiconsole stop.
+```
 
 Ensure you have a backup of the original /home/pi/wfpiconsole/wfpiconsole.kv and /home/pi/wfpiconsole/main.py files.
 
 copy wfpiconsole.include.kv to the /home/pi/wfpiconsole directory
 copy bigtempinclude.py to the /home/pi/wfpiconsole/lib directory
+```
+cp wfpiconsole.include.kv /home/pi/wfpiconsole/
+cp bigtempinclude.py /home/pi/wfpiconsole/lib/
+```
 
 Change ownership on both files to pi
+```
 chown pi:pi /home/pi/wfpiconsole/lib/bigtempinclude.py
 chown pi:pi /home/pi/wfpiconsole/wfpiconsole.include.kv
+```
 
 Modify /home/pi/wfpiconsole/wfpiconsole.kv
 
@@ -55,6 +65,9 @@ PanelOne = BigTemp
 After modifying the files, you can start the PiConsole with wfpiconsole start.  You should see the new panel.
 
 
-After modifying both files, start your PiConsole with wfpiconsole start.
+After modifying both files, start your PiConsole.
+```
+wfpiconsole start.
+```
 
 That's it.  If you have any issues, email me.
